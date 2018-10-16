@@ -15,6 +15,6 @@ gearGrab_Command is finished - might need some improvements with the switches - 
 
 climber is finished and works - all values of the right Y-axis are running only in one direction (we don't want to cook the motor)
 
-ControlledRotate is used for driving (it is easier to handle when it is defined with the gyro
+ControlledRotate is used for teleOp driving (it is easier to handle when it is defined together with the gyro)
 
 Proper comments in the code coming later
