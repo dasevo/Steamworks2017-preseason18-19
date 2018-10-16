@@ -8,7 +8,6 @@
 package org.usfirst.frc.team3630.robot;
 
 import edu.wpi.first.wpilibj.TimedRobot;
-import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.wpilibj.CameraServer;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.command.Command;
@@ -18,6 +17,10 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.drive.MecanumDrive;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.cscore.CvSink;
+import edu.wpi.cscore.CvSource;
+import edu.wpi.cscore.UsbCamera;
+import org.opencv.core.Mat;
+import org.opencv.imgproc.Imgproc;
 
 import org.usfirst.frc.team3630.robot.subsystems.MecanumDrive_Subsystem;
 import org.usfirst.frc.team3630.robot.commands.Autonomous_Command;
@@ -73,7 +76,19 @@ public class Robot extends TimedRobot {
 			camera1.setExposureAuto();
 			
 			CvSink cvSink = CameraServer.getInstance().getVideo();
+			CvSource outputStream = CameraServer.getInstance().putVideo("Camera1", 640, 480); 
+			//set up a new camera with this name in SmartDashboard (Veiw->Add->CameraServer Stream Viewer)
 			
+			Mat source = new Mat();
+			Mat output = new Mat();
+			
+			while(!Thread.interrupted())
+			{
+				cvSink.grabFrame(source);
+//				Imgproc.cvtColor(source, output, Imgproc.COLOR_BGR2RGB);//this will show the video in black and white 
+//				without this, the video should be in RGB
+				outputStream.putFrame(output);
+			}					
 		}).start();
 		
 		
