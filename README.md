@@ -1,7 +1,7 @@
 # Steamworks2017-preseason18-19
 code for the robot from 2017 season
 
-camera is defined, testing coming today
+camera is defined, testing coming today (10/16)
 
 There is a slight problem with checking the distance in DriveToDistance (the robot travels way too far during 1 tick)- try PID controller
 
