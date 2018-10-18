@@ -1,9 +1,9 @@
 # Steamworks2017-preseason18-19
 code for the robot from 2017 season
 
-camera is defined, testing coming today (10/16)
+camera is working but multiple cameras causes high lag
 
-There is a slight problem with checking the distance in DriveToDistance (the robot travels way too far during 1 tick)- try PID controller
+There is a slight problem with checking the distance in DriveToDistance (the robot travels way too far during 1 tick)- try PID controller - subsystem for driving with Ultrasonic is uploaded, I will reupload the rest of the code later and testing is coming next week (something after 10/21)
 
 gyro is not tested properly
 
