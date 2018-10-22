@@ -1,5 +1,11 @@
 # Steamworks2017-preseason18-19
 
+------------------------------------------------------------------------------------------------------------------------------
+
+# if you have any questions/comments, add them to the questions+comments section
+
+------------------------------------------------------------------------------------------------------------------------------
+
 safeDrive_Command is finished and works
 
 teleOp is finished and works
