@@ -1,23 +1,25 @@
 # Steamworks2017-preseason18-19
-code for the robot from 2017 season
-
-camera is working but multiple cameras causes high lag
-
-There is a slight problem with checking the distance in DriveToDistance (the robot travels way too far during 1 tick)- try PID controller - subsystem for driving with Ultrasonic is uploaded, I will reupload the rest of the code later and testing is coming next week (something after 10/21)
-
-gyro is not tested properly
-
-teleOp is finished and works
 
 safeDrive_Command is finished and works
 
-gearGrab_Command is finished - might need some improvements with the switches - but works (open and close in teleOp, open when the switch is pressed
+teleOp is finished and works
+
+gearGrab_Command is finished - consider adding possibility to close in autonomous period
+
+Proper comments are added -> it might be easier to find out, how it works
 
 climber is finished and works - all values of the right Y-axis are running only in one direction (we don't want to cook the motor)
 
-ControlledRotate is used for teleOp driving (it is easier to handle when it is defined together with the gyro)
 
-Proper comments in the code coming later
+
+
+camera is working but multiple cameras cause high lag
+
+the PID controller for driving to distance is implemented - testing this week (10/22 - 10/29) + adding encoders in case of low accuracy
+
+gyro is not tested properly
+
+ControlledRotate is used for teleOp driving (it is easier to handle when it is defined together with the gyro)
 
 UltrasonicPIDController is used in DriveToDistance_Subsystem
 
