@@ -10,8 +10,7 @@ Proper comments are added -> it might be easier to find out, how it works
 
 climber is finished and works - all values of the right Y-axis are running only in one direction (we don't want to cook the motor)
 
-
-
+------------------------------------------------------------------------------------------------------------------------------
 
 camera is working but multiple cameras cause high lag
 
