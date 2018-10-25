@@ -6,6 +6,9 @@
 
 ------------------------------------------------------------------------------------------------------------------------------
 
+# I suggest to arrange some meeting to talk about using command based/iterative code (or whatever you are using)
+
+------------------------------------------------------------------------------------------------------------------------------
 safeDrive_Command is finished and works
 
 teleOp is finished and works
