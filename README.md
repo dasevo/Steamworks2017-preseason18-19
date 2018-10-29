@@ -21,6 +21,8 @@ climber is finished and works - all values of the right Y-axis are running only 
 
 the error with inverting signs is corrected, now all y-axis values can be normal, the only inversion is in drive_Executor
 
+driveToDistance seems to be working (accuracy of 1-2 in), I will re-check the calculations and do some more testing
+
 ------------------------------------------------------------------------------------------------------------------------------
 
 camera is working but multiple cameras cause high lag
@@ -35,4 +37,3 @@ UltrasonicPIDController is used in DriveToDistance_Subsystem
 
 Autonomous_Command is a mess for now, some proper code + chooser will be added when all commands are working as supposed
 
-DriveToDistance_Command2 is added, testing today
