@@ -21,7 +21,7 @@ climber is finished and works - all values of the right Y-axis are running only 
 
 the error with inverting signs is corrected, now all y-axis values can be normal, the only inversion is in drive_Executor
 
-driveToDistance seems to be working (accuracy of 1-2 in), I will re-check the calculations and do some more testing
+driveToDistance not working, trying to implement PID controller
 
 ------------------------------------------------------------------------------------------------------------------------------
 
